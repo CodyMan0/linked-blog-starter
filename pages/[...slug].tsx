@@ -20,8 +20,6 @@ type Props = {
 };
 
 export default function Post({ post, backlinks }: Props) {
-	console.log(post);
-	console.log(backlinks);
 	const router = useRouter();
 	const description = post.excerpt.slice(0, 155);
 	if (!router.isFallback && !post?.slug) {
