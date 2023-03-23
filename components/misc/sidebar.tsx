@@ -15,13 +15,22 @@ const SideBar = () => {
 					className="rounded-full"
 				/>
 				<div className="flex flex-col gap-2">
-					<Link href="/about" className="pl-1 leading-normal text-3xl">
+					<Link
+						href="/about"
+						className="relative pl-1 leading-normal text-3xl hover:text-blue-200 transition-all duration-300 after:content-[''] after:bg-white after:h-[3px] after:w-[0%] after:left-0 after:bottom-0 after:absolute after:hover:w-1/2 after:transition-all after:duration-300"
+					>
 						About
 					</Link>
-					<Link href="/project" className="pl-1 leading-normal text-3xl">
+					<Link
+						href="/project"
+						className="relative pl-1 leading-normal text-3xl hover:text-blue-200 transition-all duration-300 after:content-[''] after:bg-white after:h-[3px] after:w-[0%] after:left-0 after:bottom-0 after:absolute after:hover:w-1/2 after:transition-all after:duration-300"
+					>
 						Project
 					</Link>
-					<Link href="/knowledge_MOCs" className="pl-1 leading-normal text-3xl">
+					<Link
+						href="/knowledge_MOCs"
+						className="relative pl-1 leading-normal text-3xl hover:text-blue-200 transition-all duration-300 after:content-[''] after:bg-white after:h-[3px] after:w-[0%] after:left-0 after:bottom-0 after:absolute after:hover:w-full after:transition-all after:duration-300"
+					>
 						KnowledgeBase
 					</Link>
 				</div>
