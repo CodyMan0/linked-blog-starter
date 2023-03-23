@@ -30,7 +30,7 @@ export default function Post({ post, backlinks }: Props) {
 			{router.isFallback ? (
 				<h1>Loading…</h1>
 			) : (
-				<Layout>
+				<>
 					<NextSeo
 						title={post.title}
 						description={description}
@@ -57,7 +57,7 @@ export default function Post({ post, backlinks }: Props) {
 						author={post.author}
 						backlinks={backlinks}
 					/>
-				</Layout>
+				</>
 			)}
 		</>
 	);
