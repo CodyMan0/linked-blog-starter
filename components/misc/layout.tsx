@@ -14,7 +14,7 @@ const Layout = ({ children }: Props) => {
 				<SideBar />
 			</div>
 			<div className="flex-1">
-				<Header />
+				{/* <Header /> */}
 				<main className="grow">{children}</main>
 			</div>
 		</div>
