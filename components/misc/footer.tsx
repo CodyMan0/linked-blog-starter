@@ -17,7 +17,9 @@ const Footer = () => {
 					/>
 				</Link>
 			</div>
-			<p>Made with 하트</p>
+			<p>
+				<Link href="/info">Made with</Link> 하트
+			</p>
 			<p>Terms of use | Privacy Policy | Disclaimer</p>
 		</footer>
 	);
