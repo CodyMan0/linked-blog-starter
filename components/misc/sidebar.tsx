@@ -7,13 +7,15 @@ const SideBar = () => {
 	return (
 		<aside className="w-full h-full flex flex-col flex-nowrap justify-between bg-black text-white p-10">
 			<div className="items-start flex flex-col gap-10">
-				<Image
-					width={80}
-					height={80}
-					src={image}
-					alt="Picture of me"
-					className="rounded-full"
-				/>
+				<Link href="/">
+					<Image
+						width={80}
+						height={80}
+						src={image}
+						alt="Picture of me"
+						className="rounded-full"
+					/>
+				</Link>
 				<div className="flex flex-col gap-2">
 					<Link
 						href="/about"
