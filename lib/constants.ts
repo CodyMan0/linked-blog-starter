@@ -34,3 +34,10 @@ export const BLOCK_LIST = [
 		label: "etc",
 	},
 ];
+
+export const PROJECT_LIST = [
+	{
+		id: 1,
+		label: "koda",
+	},
+];
