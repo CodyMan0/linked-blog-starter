@@ -16,7 +16,7 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
 	};
 
 	const items: Items = {};
-	console.log("fields", fields);
+	// console.log("apiItem", items);
 	// Ensure only the minimal needed data is exposed
 	fields.forEach((field) => {
 		if (field === "slug") {
@@ -58,6 +58,7 @@ export function getAllPosts(fields: string[] = []) {
 		.map((slug) => getPostBySlug(slug, fields))
 		// sort posts by date in descending order
 		.sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
+
 	//포스트 최신 순
 	return posts;
 }
@@ -67,6 +68,8 @@ export function getLinksMapping() {
 	const postsMapping = new Map(
 		getAllPosts(["slug", "content"]).map((i) => [i.slug, i.content])
 	);
+
+	console.log("postMap", postsMapping);
 	const allSlugs = new Set(postsMapping.keys());
 	postsMapping.forEach((content, slug) => {
 		const mdLink = /\[[^\[\]]+\]\(([^\(\)]+)\)/g;
@@ -80,7 +83,7 @@ export function getLinksMapping() {
 		}
 		linksMapping[slug] = linkSlugs;
 	});
-	console.log("link", linksMapping);
+	// console.log("link", linksMapping);
 	return linksMapping;
 }
 
