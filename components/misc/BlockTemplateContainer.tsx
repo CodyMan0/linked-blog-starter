@@ -6,22 +6,20 @@ const BlockTemplateContainer = () => {
 	const router = useRouter();
 	const location = router.pathname;
 
+	const changedListAsLocation = location === "/" ? BLOCK_LIST : PROJECT_LIST;
 	return (
 		<div className="grid grid-cols-2 auto-rows-[35vh] overflow-hidden">
-			{location === "/"
-				? BLOCK_LIST.map((block) => {
-						return (
-							<BlockTemplate
-								key={block.id}
-								width={block.width}
-								color={block.color}
-								label={block.label}
-							/>
-						);
-				  })
-				: PROJECT_LIST.map((block) => {
-						return <BlockTemplate key={block.id} label={block.label} />;
-				  })}
+			{changedListAsLocation.map((block) => {
+				return (
+					<BlockTemplate
+						key={block.id}
+						width={block.width}
+						color={block.color}
+						label={block.label}
+						image={block?.image}
+					/>
+				);
+			})}
 		</div>
 	);
 };

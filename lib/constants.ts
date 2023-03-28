@@ -8,12 +8,14 @@ export const BLOCK_LIST = [
 		width: 40,
 		color: "blue",
 		label: "KODA",
+		image: "survey.png",
 	},
 	{
 		id: 2,
 		width: 60,
 		color: "red",
 		label: "About Me",
+		image: "aboutMe.jpg",
 	},
 	{
 		id: 3,
@@ -28,16 +30,30 @@ export const BLOCK_LIST = [
 		label: "GACHI",
 	},
 	{
-		id: 5,
+		id: 6,
 		width: 33.3,
 		color: "purple",
-		label: "etc",
+		image: "obsidian.png",
+		label: "Digital Garden",
 	},
 ];
 
 export const PROJECT_LIST = [
 	{
 		id: 1,
+		width: 33.3,
+		color: "yellow",
+		label: "RUNNERUP",
+	},
+	{
+		id: 2,
+		width: 33.3,
+		color: "purple",
+		label: "GACHI",
+	},
+	{
+		id: 3,
 		label: "koda",
+		image: "survey.png",
 	},
 ];

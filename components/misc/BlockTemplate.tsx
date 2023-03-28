@@ -10,7 +10,7 @@ type Props = {
 };
 
 const BlockTemplate = ({ width, color, image, label }: Props) => {
-	console.log(`위드 ${width} 컬러${color}`);
+	console.log(image);
 
 	const widthVariants = {
 		40: "min-w-[40%]",
@@ -28,13 +28,15 @@ const BlockTemplate = ({ width, color, image, label }: Props) => {
 	return (
 		<div className="w-full relative overflow-hidden">
 			<Link href="/" className="">
-				<Image
-					src={survey}
-					alt="project"
-					style={{ width: "100%", height: "100%" }}
-					className=" object-cover absolute t-0 left-0 w-full h-full transition ease-in-out delay-150 hover:-translate-1 hover:scale-110 ;"
-				/>
-				// {image || "이미지 없음"}
+				{image && (
+					<Image
+						src={`/assets/blog/authors/${image}`}
+						alt="project"
+						fill
+						style={{ width: "100%", height: "100%" }}
+						className=" object-cover absolute t-0 left-0 w-full h-full transition ease-in-out delay-150 hover:-translate-1 hover:scale-110 ;"
+					/>
+				)}
 				<button className="bg-white z-10 absolute top-3.5 right-3.5 p-3 text-2xl font-bold border-2 border-black rounded-sm drop-shadow-lg">
 					{label}
 				</button>
