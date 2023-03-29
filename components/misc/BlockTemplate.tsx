@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import { convertLabelName } from "../../lib/constants";
 import survey from "/public/assets/blog/authors/survey.png";
 
 type Props = {
@@ -10,24 +11,9 @@ type Props = {
 };
 
 const BlockTemplate = ({ width, color, image, label }: Props) => {
-	console.log(image);
-
-	const widthVariants = {
-		40: "min-w-[40%]",
-		60: "min-w-[60%]",
-		33.3: "min-w-[33.3%]",
-	};
-	const colorVariants = {
-		blue: "bg-blue-600 hover:bg-blue-500",
-		red: "bg-red-500 hover:bg-red-400",
-		yellow: "bg-yellow-300 hover:bg-yellow-400 ",
-		pink: "bg-yellow-300 hover:bg-yellow-400 ",
-		purple: "bg-yellow-300 hover:bg-yellow-400 ",
-	};
-
 	return (
 		<div className="w-full relative overflow-hidden">
-			<Link href="/" className="">
+			<Link href={`/${convertLabelName[label]}`} className="">
 				{image && (
 					<Image
 						src={`/assets/blog/authors/${image}`}

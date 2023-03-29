@@ -53,7 +53,28 @@ export const PROJECT_LIST = [
 	},
 	{
 		id: 3,
-		label: "koda",
+		label: "KODA",
 		image: "survey.png",
 	},
 ];
+
+export const widthVariants = {
+	40: "min-w-[40%]",
+	60: "min-w-[60%]",
+	33.3: "min-w-[33.3%]",
+};
+export const colorVariants = {
+	blue: "bg-blue-600 hover:bg-blue-500",
+	red: "bg-red-500 hover:bg-red-400",
+	yellow: "bg-yellow-300 hover:bg-yellow-400 ",
+	pink: "bg-yellow-300 hover:bg-yellow-400 ",
+	purple: "bg-yellow-300 hover:bg-yellow-400 ",
+};
+
+export const convertLabelName = {
+	"About Me": "about",
+	KODA: "project/koda",
+	RUNNERUP: "project/runnerup",
+	GACHI: "project/gachi",
+	"Digital Garden": "knowledge_MOCs",
+};
