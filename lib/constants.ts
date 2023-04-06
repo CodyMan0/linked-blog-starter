@@ -73,8 +73,8 @@ export const colorVariants = {
 
 export const convertLabelName = {
 	"About Me": "about",
-	KODA: "project/koda",
-	RUNNERUP: "project/runnerup",
-	GACHI: "project/gachi",
+	KODA: "projects/koda",
+	RUNNERUP: "projects/runnerup",
+	GACHI: "projects/gachi",
 	"Digital Garden": "knowledge_MOCs",
 };
