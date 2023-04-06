@@ -8,7 +8,7 @@ const BlockTemplateContainer = () => {
 
 	const changedListAsLocation = location === "/" ? BLOCK_LIST : PROJECT_LIST;
 	return (
-		<div className="grid grid-cols-2 auto-rows-[35vh] overflow-hidden">
+		<div className="grid lg:grid-cols-2 auto-rows-[60vh] lg:auto-rows-[35vh] overflow-hidden">
 			{changedListAsLocation.map((block) => {
 				return (
 					<BlockTemplate
