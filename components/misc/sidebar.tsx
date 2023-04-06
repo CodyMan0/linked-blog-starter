@@ -17,9 +17,9 @@ const SideBar = () => {
 					/>
 				</Link>
 				<div className="flex lg:flex-col gap-6">
-					<span>
+					<span className="">
 						<Link
-							className="relative pl-1 pb-1 lg:pb-2 leading-normal lg:text-3xl md:text-2xl sm:text-xl hover:text-blue-200 transition-all duration-300 after:content-[''] after:bg-white after:h-[3px] after:w-[0%] after:left-0 after:bottom-0 after:absolute after:hover:w-full after:transition-all after:duration-300 tracking-wide phone:hidden sm:block md:block lg:block"
+							className="relative pl-1 pb-1 lg:pb-2 leading-normal lg:text-3xl md:text-2xl sm:text-xl hover:text-blue-200 transition-all duration-300 after:content-[''] after:bg-white after:h-[3px] after:w-[0%] after:left-0 after:bottom-0 after:absolute after:hover:w-full after:transition-all after:duration-300 tracking-wide phone:hidden sm:inline"
 							href="/about"
 						>
 							About
@@ -27,7 +27,7 @@ const SideBar = () => {
 					</span>
 					<span>
 						<Link
-							className="relative pl-1 pb-1 lg:pb-2 leading-normal lg:text-3xl md:text-2xl sm:text-xl hover:text-blue-200 transition-all duration-300 after:content-[''] after:bg-white after:h-[3px] after:w-[0%] after:left-0 after:bottom-0 after:absolute after:hover:w-full after:transition-all after:duration-300 tracking-wide phone:hidden sm:block md:block lg:block"
+							className="relative pl-1 pb-1 lg:pb-2 leading-normal lg:text-3xl md:text-2xl sm:text-xl hover:text-blue-200 transition-all duration-300 after:content-[''] after:bg-white after:h-[3px] after:w-[0%] after:left-0 after:bottom-0 after:absolute after:hover:w-full after:transition-all after:duration-300 tracking-wide phone:hidden sm:inline"
 							href="/projects"
 						>
 							Projects
