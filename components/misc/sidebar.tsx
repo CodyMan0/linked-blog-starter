@@ -5,15 +5,15 @@ import image from "/public/assets/blog/authors/brian.png";
 
 const SideBar = () => {
 	return (
-		<aside className="w-full h-full flex lg:flex-col flex-nowrap bg-black text-white p-10">
+		<aside className="w-full h-full flex lg:flex-col flex-nowrap bg-black text-white p-10 phone:p-6 sm:p-8">
 			<div className="w-full h-full flex items-center justify-between lg:items-start lg:justify-start lg:flex-col gap-10">
 				<Link href="/">
 					<Image
-						width={80}
-						height={80}
+						width={90}
+						height={90}
 						src={image}
-						alt="Picture of me"
-						className="rounded-full"
+						alt="my picture"
+						className="rounded-full phone:w-16 sm:w-20"
 					/>
 				</Link>
 				<div className="flex lg:flex-col gap-6">
