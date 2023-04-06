@@ -5,8 +5,8 @@ import image from "/public/assets/blog/authors/brian.png";
 
 const SideBar = () => {
 	return (
-		<aside className="w-full h-full flex lg:flex-col md:flex-row flex-nowrap justify-between bg-black text-white p-10">
-			<div className="items-start flex flex-col gap-10">
+		<aside className="w-full h-full flex lg:flex-col flex-nowrap bg-black text-white p-10">
+			<div className="w-full h-full flex items-center justify-between lg:items-start lg:justify-start lg:flex-col gap-10">
 				<Link href="/">
 					<Image
 						width={80}
@@ -16,25 +16,31 @@ const SideBar = () => {
 						className="rounded-full"
 					/>
 				</Link>
-				<div className="flex flex-col gap-2">
-					<Link
-						href="/about"
-						className="relative pl-1 leading-normal text-3xl hover:text-blue-200 transition-all duration-300 after:content-[''] after:bg-white after:h-[3px] after:w-[0%] after:left-0 after:bottom-0 after:absolute after:hover:w-1/2 after:transition-all after:duration-300"
-					>
-						About
-					</Link>
-					<Link
-						href="/project"
-						className="relative pl-1 leading-normal text-3xl hover:text-blue-200 transition-all duration-300 after:content-[''] after:bg-white after:h-[3px] after:w-[0%] after:left-0 after:bottom-0 after:absolute after:hover:w-1/2 after:transition-all after:duration-300"
-					>
-						Project
-					</Link>
-					<Link
-						href="/knowledge_MOCs"
-						className="relative pl-1 leading-normal text-3xl hover:text-blue-200 transition-all duration-300 after:content-[''] after:bg-white after:h-[3px] after:w-[0%] after:left-0 after:bottom-0 after:absolute after:hover:w-full after:transition-all after:duration-300"
-					>
-						KnowledgeBase
-					</Link>
+				<div className="flex lg:flex-col gap-6">
+					<span>
+						<Link
+							href="/about"
+							className="relative pl-1 pb-1 lg:pb-2 leading-normal lg:text-3xl text-2xl hover:text-blue-200 transition-all duration-300 after:content-[''] after:bg-white after:h-[3px] after:w-[0%] after:left-0 after:bottom-0 after:absolute after:hover:w-full after:transition-all after:duration-300 tracking-wide"
+						>
+							About
+						</Link>
+					</span>
+					<span>
+						<Link
+							href="/projects"
+							className="relative pl-1 pb-1 lg:pb-2 leading-normal lg:text-3xl text-2xl hover:text-blue-200 transition-all duration-300 after:content-[''] after:bg-white after:h-[3px] after:w-[0%] after:left-0 after:bottom-0 after:absolute after:hover:w-full after:transition-all after:duration-300 tracking-wide"
+						>
+							Projects
+						</Link>
+					</span>
+					<span>
+						<Link
+							href="/knowledge_MOCs"
+							className="relative pl-1 pb-1 lg:pb-2 leading-normal lg:text-3xl text-2xl hover:text-blue-200 transition-all duration-300 after:content-[''] after:bg-white after:h-[3px] after:w-[0%] after:left-0 after:bottom-0 after:absolute after:hover:w-full after:transition-all after:duration-300 tracking-wide"
+						>
+							KnowledgeBase
+						</Link>
+					</span>
 				</div>
 			</div>
 		</aside>
