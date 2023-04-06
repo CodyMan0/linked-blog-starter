@@ -1,5 +1,7 @@
+import BasicContentLayout from "../../components/misc/layout/basicContentLayout";
+
 const RunnerUp = () => {
-	return <div>runnerup</div>;
+	return <BasicContentLayout title="runnerUp">runnerup</BasicContentLayout>;
 };
 
 export default RunnerUp;

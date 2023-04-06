@@ -1,10 +1,10 @@
 import { useRouter } from "next/router";
 import React from "react";
-import Footer from "./footer";
+import Footer from "../footer";
 
-import Header from "./header";
-import SideBar from "./sidebar";
-import Transition from "./Transition";
+import Header from "../header";
+import SideBar from "../sidebar";
+import Transition from "../Transition";
 
 type Props = {
 	children: React.ReactNode;

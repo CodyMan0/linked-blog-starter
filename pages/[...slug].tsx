@@ -5,7 +5,7 @@ import { markdownToHtml } from "../lib/markdownToHtml";
 import type PostType from "../interfaces/post";
 import path from "path";
 import PostSingle from "../components/blog/post-single";
-import Layout from "../components/misc/layout";
+import Layout from "../components/misc/layout/layout";
 import { NextSeo } from "next-seo";
 
 type Items = {

@@ -1,5 +1,7 @@
+import BasicContentLayout from "../../components/misc/layout/basicContentLayout";
+
 const Gachi = () => {
-	return <div>Gachi</div>;
+	return <BasicContentLayout title="Gachi">Gachi</BasicContentLayout>;
 };
 
 export default Gachi;
