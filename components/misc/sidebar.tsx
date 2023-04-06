@@ -5,7 +5,7 @@ import image from "/public/assets/blog/authors/brian.png";
 
 const SideBar = () => {
 	return (
-		<aside className="w-full h-full flex flex-col flex-nowrap justify-between bg-black text-white p-10">
+		<aside className="w-full h-full flex lg:flex-col md:flex-row flex-nowrap justify-between bg-black text-white p-10">
 			<div className="items-start flex flex-col gap-10">
 				<Link href="/">
 					<Image
@@ -37,7 +37,6 @@ const SideBar = () => {
 					</Link>
 				</div>
 			</div>
-			<Footer />
 		</aside>
 	);
 };

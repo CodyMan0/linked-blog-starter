@@ -5,7 +5,7 @@ import instaIcon from "/public/favicon/instagram.png";
 
 const Footer = () => {
 	return (
-		<footer className="fixed left-0 bottom-0 p-10 text-white">
+		<footer className="relative bottom-0 lg:fixed lg:left-0 lg:bottom-0 lg:w-96  w-full p-10 text-white bg-black">
 			<div className="flex flex-row gap-3">
 				<Link href="www">
 					<Image

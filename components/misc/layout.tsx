@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import React from "react";
+import Footer from "./footer";
 
 import Header from "./header";
 import SideBar from "./sidebar";
@@ -13,8 +14,8 @@ const Layout = ({ children }: Props) => {
 	const router = useRouter();
 	const path = router.pathname;
 	return (
-		<div className="flex min-h-screen overflow-hidden">
-			<div className="flex-initial w-96">
+		<div className="flex lg:flex-row flex-col min-h-screen overflow-hidden">
+			<div className="flex-initial w-full lg:w-96">
 				<SideBar />
 			</div>
 			<div className="flex-1">
@@ -23,6 +24,7 @@ const Layout = ({ children }: Props) => {
 					{children}
 				</Transition>
 			</div>
+			<Footer />
 		</div>
 	);
 };
