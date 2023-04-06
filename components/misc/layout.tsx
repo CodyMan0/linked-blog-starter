@@ -20,7 +20,7 @@ const Layout = ({ children }: Props) => {
 			<div className="flex-1">
 				<Transition location={router.pathname}>
 					{path === "/[...slug]" && <Header />}
-					<main className="grow">{children}</main>
+					{children}
 				</Transition>
 			</div>
 		</div>

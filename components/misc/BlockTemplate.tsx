@@ -1,7 +1,6 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { convertLabelName } from "../../lib/constants";
-import survey from "/public/assets/blog/authors/survey.png";
 
 type Props = {
 	label?: string;
@@ -11,6 +10,7 @@ type Props = {
 };
 
 const BlockTemplate = ({ width, color, image, label }: Props) => {
+	console.log(image);
 	return (
 		<div className="w-full relative overflow-hidden">
 			<Link href={`/${convertLabelName[label]}`} className="">

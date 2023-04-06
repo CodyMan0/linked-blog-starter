@@ -28,6 +28,7 @@ export const BLOCK_LIST = [
 		width: 33.3,
 		color: "purple",
 		label: "GACHI",
+		image: "gachi.png",
 	},
 	{
 		id: 6,
@@ -47,9 +48,8 @@ export const PROJECT_LIST = [
 	},
 	{
 		id: 2,
-		width: 33.3,
-		color: "purple",
 		label: "GACHI",
+		image: "gachi.png",
 	},
 	{
 		id: 3,

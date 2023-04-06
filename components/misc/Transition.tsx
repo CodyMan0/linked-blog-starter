@@ -23,9 +23,8 @@ const getTransitionStyles = {
 };
 
 const Transition = ({ children, location }) => {
-	console.log(location);
 	return (
-		<TransitionGroup style={{ position: "relative" }}>
+		<TransitionGroup style={{ position: "relative" }} className="w-full h-full">
 			<ReactTransition
 				key={location}
 				timeout={{
@@ -38,6 +37,7 @@ const Transition = ({ children, location }) => {
 						style={{
 							...getTransitionStyles[status],
 						}}
+						className="w-full h-full"
 					>
 						{children}
 					</div>
