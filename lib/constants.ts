@@ -45,16 +45,25 @@ export const PROJECT_LIST = [
 		width: 33.3,
 		color: "yellow",
 		label: "RUNNERUP",
+		stacks: ["nextJs", "typescript", "storybook"],
 	},
 	{
 		id: 2,
 		label: "GACHI",
 		image: "gachi.png",
+		stacks: ["svelteKit", "typescript", "tailwind"],
 	},
 	{
 		id: 3,
+		label: "PODO",
+		image: "",
+		stacks: ["reactJs", "typescript", "express.js", "EC2"],
+	},
+	{
+		id: 4,
 		label: "KODA",
 		image: "survey.png",
+		stacks: ["reactJs", "javascript", "css-in-js"],
 	},
 ];
 
@@ -76,5 +85,6 @@ export const convertLabelName = {
 	KODA: "projects/koda",
 	RUNNERUP: "projects/runnerup",
 	GACHI: "projects/gachi",
+	PODO: "projects/podo",
 	"Digital Garden": "knowledge_MOCs",
 };

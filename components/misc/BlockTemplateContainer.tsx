@@ -10,6 +10,7 @@ const BlockTemplateContainer = () => {
 	return (
 		<div className="grid lg:grid-cols-2 phone:auto-rows-[40vh] sm:auto-rows-[50vh] md:auto-rows-[50vh] lg:auto-rows-[35vh] overflow-hidden">
 			{changedListAsLocation.map((block) => {
+				console.log(block);
 				return (
 					<BlockTemplate
 						key={block.id}
@@ -17,6 +18,7 @@ const BlockTemplateContainer = () => {
 						color={block.color}
 						label={block.label}
 						image={block?.image}
+						stacks={block?.stacks}
 					/>
 				);
 			})}
