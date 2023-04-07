@@ -7,25 +7,40 @@ type Props = {
 	width?: number;
 	color?: string;
 	image?: any;
+	stacks?: string[];
 };
 
-const BlockTemplate = ({ width, color, image, label }: Props) => {
-	console.log(image);
+const BlockTemplate = ({ width, color, image, label, stacks }: Props) => {
+	console.log(stacks);
+
 	return (
-		<div className="w-full relative overflow-hidden ">
+		<div className="w-full relative overflow-hidden">
 			<Link href={`/${convertLabelName[label]}`} className="">
-				{image && (
-					<Image
-						src={`/assets/blog/authors/${image}`}
-						alt="project"
-						fill
-						style={{ width: "100%", height: "100%" }}
-						className=" object-cover absolute t-0 left-0 w-full h-full transition ease-in-out delay-300 hover:-translate-1 hover:scale-110 brightness-75 hover:brightness-100"
-					/>
-				)}
-				<button className="bg-white z-10 absolute top-3.5 right-3.5 p-3 sm:text-sm md:text-xl lg:text-2xl font-bold border-2 border-black rounded-sm drop-shadow-lg">
-					{label}
-				</button>
+				<>
+					{image && (
+						<Image
+							src={`/assets/blog/authors/${image}`}
+							alt="project"
+							fill
+							style={{ width: "100%", height: "100%" }}
+							className=" object-cover absolute t-0 left-0 w-full h-full transition ease-in-out delay-300 hover:-translate-1 hover:scale-110 brightness-75 hover:brightness-100"
+						/>
+					)}
+
+					<button className="bg-white absolute z-10 top-3.5 right-3.5 p-3 sm:text-sm md:text-xl lg:text-2xl font-bold border-2 border-black rounded-sm drop-shadow-lg">
+						{label}
+					</button>
+
+					<div className=" absolute top-[85%] right-3.5 sm:text-sm lg:text-md">
+						{stacks?.map((stack) => {
+							return (
+								<span className="font-medium bg-white border p-1 m-1 border-black">
+									{stack}
+								</span>
+							);
+						})}
+					</div>
+				</>
 			</Link>
 		</div>
 	);
