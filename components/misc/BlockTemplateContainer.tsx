@@ -8,17 +8,19 @@ const BlockTemplateContainer = () => {
 
 	const changedListAsLocation = location === "/" ? BLOCK_LIST : PROJECT_LIST;
 	return (
-		<div className="grid lg:grid-cols-2 phone:auto-rows-[40vh] sm:auto-rows-[50vh] md:auto-rows-[50vh] lg:auto-rows-[35vh] overflow-hidden">
+		<div
+			className={`grid ${
+				location === "/" ? "lg:grid-cols-3" : "lg:grid-cols-4"
+			} phone:auto-rows-[40vh] sm:auto-rows-[50vh] md:auto-rows-[50vh] lg:auto-rows-[35vh] overflow-hidden`}
+		>
 			{changedListAsLocation.map((block) => {
-				console.log(block);
 				return (
 					<BlockTemplate
 						key={block.id}
-						width={block.width}
-						color={block.color}
-						label={block.label}
+						label={block?.label}
 						image={block?.image}
 						stacks={block?.stacks}
+						gridLayout={block?.gridLayout}
 					/>
 				);
 			})}

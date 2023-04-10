@@ -8,13 +8,21 @@ type Props = {
 	color?: string;
 	image?: any;
 	stacks?: string[];
+	gridLayout: string;
 };
 
-const BlockTemplate = ({ width, color, image, label, stacks }: Props) => {
-	console.log(stacks);
+const BlockTemplate = ({ gridLayout, image, label, stacks }: Props) => {
+	const customObject = {
+		"1/3": "col-span-1",
+		"2/3": "col-span-2",
+		"3/3": "col-span-3",
+		"1/2": "col-span-2",
+	};
 
 	return (
-		<div className="w-full relative overflow-hidden">
+		<div
+			className={`w-full ${customObject[gridLayout]} relative overflow-hidden`}
+		>
 			<Link href={`/${convertLabelName[label]}`} className="">
 				<>
 					{image && (
@@ -32,13 +40,14 @@ const BlockTemplate = ({ width, color, image, label, stacks }: Props) => {
 					</button>
 
 					<div className=" absolute top-[85%] right-3.5 sm:text-sm lg:text-md">
-						{stacks?.map((stack) => {
-							return (
-								<span className="font-medium bg-white border p-1 m-1 border-black">
-									{stack}
-								</span>
-							);
-						})}
+						{stacks &&
+							stacks?.map((stack) => {
+								return (
+									<span className="font-medium bg-white border p-1 m-1 border-black">
+										{stack}
+									</span>
+								);
+							})}
 					</div>
 				</>
 			</Link>

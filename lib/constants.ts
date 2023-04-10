@@ -5,65 +5,62 @@ export const HOME_OG_IMAGE_URL =
 export const BLOCK_LIST = [
 	{
 		id: 1,
-		width: 40,
-		color: "blue",
 		label: "KODA",
 		image: "survey.png",
+		gridLayout: "1/3",
 	},
 	{
 		id: 2,
-		width: 60,
-		color: "red",
 		label: "About Me",
 		image: "aboutMe.jpg",
+		gridLayout: "2/3",
 	},
 	{
 		id: 3,
-		width: 33.3,
-		color: "yellow",
 		label: "RUNNERUP",
+		gridLayout: "1/3",
 	},
 	{
 		id: 4,
-		width: 33.3,
-		color: "purple",
 		label: "GACHI",
 		image: "gachi.png",
+		gridLayout: "1/3",
 	},
 	{
-		id: 6,
-		width: 33.3,
-		color: "purple",
+		id: 5,
 		image: "obsidian.png",
 		label: "Digital Garden",
+		gridLayout: "1/3",
 	},
 ];
 
 export const PROJECT_LIST = [
 	{
 		id: 1,
-		width: 33.3,
-		color: "yellow",
 		label: "RUNNERUP",
 		stacks: ["nextJs", "typescript", "storybook"],
+		gridLayout: "1/2",
 	},
 	{
 		id: 2,
 		label: "GACHI",
 		image: "gachi.png",
 		stacks: ["svelteKit", "typescript", "tailwind"],
+		gridLayout: "1/2",
 	},
 	{
 		id: 3,
 		label: "PODO",
 		image: "",
 		stacks: ["reactJs", "typescript", "express.js", "EC2"],
+		gridLayout: "1/2",
 	},
 	{
 		id: 4,
 		label: "KODA",
 		image: "survey.png",
 		stacks: ["reactJs", "javascript", "css-in-js"],
+		gridLayout: "1/2",
 	},
 ];
 
