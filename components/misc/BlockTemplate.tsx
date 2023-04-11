@@ -41,9 +41,12 @@ const BlockTemplate = ({ gridLayout, image, label, stacks }: Props) => {
 
 					<div className=" absolute top-[85%] right-3.5 sm:text-sm lg:text-md">
 						{stacks &&
-							stacks?.map((stack) => {
+							stacks?.map((stack, idx) => {
 								return (
-									<span className="font-medium bg-white border p-1 m-1 border-black">
+									<span
+										key={idx}
+										className="font-medium bg-white border p-1 m-1 border-black"
+									>
 										{stack}
 									</span>
 								);
