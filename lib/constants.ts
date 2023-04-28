@@ -18,6 +18,7 @@ export const BLOCK_LIST = [
 	{
 		id: 3,
 		label: "RUNNERUP",
+		image: "",
 		gridLayout: "1/3",
 	},
 	{
@@ -38,6 +39,7 @@ export const PROJECT_LIST = [
 	{
 		id: 1,
 		label: "RUNNERUP",
+		image: "",
 		stacks: ["nextJs", "typescript", "storybook"],
 		gridLayout: "1/2",
 	},
