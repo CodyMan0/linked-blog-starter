@@ -6,9 +6,9 @@ type Props = {
 	label?: string;
 	width?: number;
 	color?: string;
-	image?: any;
-	stacks?: string[];
-	gridLayout: string;
+	image?: string | undefined;
+	stacks?: string[] | undefined;
+	gridLayout?: string | undefined;
 };
 
 const BlockTemplate = ({ gridLayout, image, label, stacks }: Props) => {
@@ -18,6 +18,8 @@ const BlockTemplate = ({ gridLayout, image, label, stacks }: Props) => {
 		"3/3": "col-span-3",
 		"1/2": "col-span-2",
 	};
+
+	console.log(gridLayout, image, label, stacks);
 
 	return (
 		<div
