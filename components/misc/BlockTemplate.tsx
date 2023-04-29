@@ -33,7 +33,7 @@ const BlockTemplate = ({ gridLayout, image, label, stacks }: Props) => {
 							alt="project"
 							fill
 							style={{ width: "100%", height: "100%" }}
-							className=" object-cover absolute t-0 left-0 w-full h-full transition ease-in-out delay-300 hover:-translate-1 hover:scale-110 brightness-75 hover:brightness-100"
+							className=" object-cover absolute t-0 left-0 w-full h-full transition ease-in-out delay-100 hover:-translate-1 hover:scale-110 brightness-75 hover:brightness-100"
 						/>
 					)}
 
