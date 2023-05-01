@@ -1,7 +1,5 @@
 import { useRouter } from "next/router";
 import React from "react";
-import Footer from "../footer";
-
 import Header from "../header";
 import SideBar from "../sidebar";
 import Transition from "../Transition";
@@ -24,7 +22,6 @@ const Layout = ({ children }: Props) => {
 					{children}
 				</Transition>
 			</div>
-			<Footer />
 		</div>
 	);
 };
