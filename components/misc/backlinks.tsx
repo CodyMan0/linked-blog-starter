@@ -12,12 +12,14 @@ type Props = {
 
 const Backlinks = ({ backlinks }: Props) => {
 	console.log("ink", backlinks);
+
 	return (
 		<>
-			{Object.keys(backlinks).map((slug) => {
+			{Object.keys(backlinks).map((slug, idx) => {
 				const post = backlinks[slug];
+				console.log(post);
 				return (
-					<Link as={slug} href="[...slug]" className="col-span-1">
+					<Link key={idx} as={slug} href="[...slug]" className="col-span-1">
 						<NotePreview title={post.title} content={post.excerpt} />
 					</Link>
 				);

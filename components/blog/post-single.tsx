@@ -3,6 +3,7 @@ import Author from "../../interfaces/author";
 import Backlinks from "../misc/backlinks";
 import PostBody from "./post-body";
 import PostMeta from "./post-meta";
+import ForceDirectedGraph from "../misc/ForceDirectedGraph";
 
 type Props = {
 	title: string;
@@ -47,9 +48,16 @@ function PostSingle({ title, date, author, content, backlinks }: Props) {
 								</div>
 
 								{/* Sidebar */}
-								<hr className="my-10 border border-dashed lg:block" />
-								<aside className="relative lg:block lg:w-72 lg:ml-20 shrink-0">
+								<aside className="relative lg:block lg:w-72 lg:ml-20 mt-10 lg:mt-0 shrink-0">
 									<div>
+										<h4 className="text-lg font-bold leading-snug tracking-tight mb-4">
+											graph view
+										</h4>
+										<div className="w-full h-72 relative note-preview max-w-[400px] rounded shadow-sm bg-white cursor-pointer hover:border-transparent">
+											<ForceDirectedGraph />
+										</div>
+									</div>
+									<div className="mt-10">
 										<h4 className="text-lg font-bold leading-snug tracking-tight mb-4">
 											Backlinks
 										</h4>

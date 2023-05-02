@@ -92,10 +92,6 @@ export async function getStaticProps({ params }: Params) {
 
 	console.log("slug", slug);
 	console.log("backlink", backlinks);
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 	const backlinkNodes = Object.fromEntries(
 		await Promise.all(
 			backlinks.map(async (slug) => {
