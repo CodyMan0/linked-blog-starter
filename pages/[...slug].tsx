@@ -20,6 +20,7 @@ type Props = {
 };
 
 export default function Post({ post, backlinks }: Props) {
+	console.log("backlinks", backlinks);
 	const router = useRouter();
 	const description = post.excerpt.slice(0, 155);
 	if (!router.isFallback && !post?.slug) {
@@ -81,6 +82,7 @@ export async function getStaticProps({ params }: Params) {
 		"content",
 		"ogImage",
 	]);
+
 	const content = await markdownToHtml(post.content || "", slug);
 	const linkMapping = await getLinksMapping();
 	console.log("linkMapping", linkMapping);
@@ -90,7 +92,10 @@ export async function getStaticProps({ params }: Params) {
 
 	console.log("slug", slug);
 	console.log("backlink", backlinks);
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 	const backlinkNodes = Object.fromEntries(
 		await Promise.all(
 			backlinks.map(async (slug) => {
