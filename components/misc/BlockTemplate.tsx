@@ -19,20 +19,21 @@ const BlockTemplate = ({ gridLayout, image, label, stacks }: Props) => {
 		"1/2": "col-span-2",
 	};
 
-	console.log(gridLayout, image, label, stacks);
-
 	return (
 		<div
 			className={`w-full ${customObject[gridLayout]} relative overflow-hidden`}
 		>
 			<Link href={`/${convertLabelName[label]}`} className="">
-				<>
+				<div className="w-full h-full relative">
 					{image && (
 						<Image
+							priority
 							src={`/assets/blog/authors/${image}`}
-							alt="project"
+							alt="project_image"
 							fill
-							style={{ width: "100%", height: "100%" }}
+							sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
 							className=" object-cover absolute t-0 left-0 w-full h-full transition ease-in-out delay-100 hover:-translate-1 hover:scale-110 brightness-75 hover:brightness-100"
 						/>
 					)}
@@ -54,7 +55,7 @@ const BlockTemplate = ({ gridLayout, image, label, stacks }: Props) => {
 								);
 							})}
 					</div>
-				</>
+				</div>
 			</Link>
 		</div>
 	);
