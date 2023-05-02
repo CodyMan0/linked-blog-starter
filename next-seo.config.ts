@@ -3,7 +3,7 @@ import { DefaultSeoProps } from "next-seo";
 const description = "made this website with NextJS";
 // See https://www.npmjs.com/package/next-seo for more options
 const config: DefaultSeoProps = {
-	titleTemplate: "%s | Linked Blog Starter",
+	titleTemplate: "%s | Brian",
 	defaultTitle: "Big-Dreamer, Problem-solver",
 	description,
 
