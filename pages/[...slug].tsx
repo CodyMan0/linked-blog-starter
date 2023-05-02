@@ -83,10 +83,13 @@ export async function getStaticProps({ params }: Params) {
 	]);
 	const content = await markdownToHtml(post.content || "", slug);
 	const linkMapping = await getLinksMapping();
-	console.log("linkMap", linkMapping);
+	console.log("linkMapping", linkMapping);
 	const backlinks = Object.keys(linkMapping).filter(
 		(k) => linkMapping[k].includes(post.slug) && k !== post.slug
 	);
+
+	console.log("slug", slug);
+	console.log("backlink", backlinks);
 
 	const backlinkNodes = Object.fromEntries(
 		await Promise.all(
