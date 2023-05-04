@@ -53,8 +53,11 @@ function PostSingle({ title, date, author, content, backlinks }: Props) {
 										<h4 className="text-lg font-bold leading-snug tracking-tight mb-4">
 											graph view
 										</h4>
-										<div className="w-full h-72 relative note-preview max-w-[400px] rounded shadow-sm bg-white cursor-pointer hover:border-transparent">
-											<ForceDirectedGraph />
+										<div
+											id="graph"
+											className="w-full h-72 relative note-preview max-w-[400px] rounded shadow-sm bg-white cursor-pointer hover:border-transparent"
+										>
+											<ForceDirectedGraph backlinks={backlinks} title={title} />
 										</div>
 									</div>
 									<div className="mt-10">

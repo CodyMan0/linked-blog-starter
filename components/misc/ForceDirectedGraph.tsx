@@ -2,16 +2,17 @@ import * as d3 from "d3";
 import { useEffect, useRef } from "react";
 import styles from "../../styles/ForceDirectedGraph.module.css";
 
-interface Node {
-	id: string;
-}
+type Props = {
+	backlinks: {
+		[k: string]: {
+			title: string;
+			excerpt: string;
+		};
+	};
+	title: string;
+};
 
-interface Link {
-	source: string;
-	target: string;
-}
-
-const ForceDirectedGraph = () => {
+const ForceDirectedGraph = ({ backlinks, title }: Props) => {
 	const graphRef = useRef<SVGSVGElement>(null);
 
 	const getGraphView = () => {
@@ -24,18 +25,30 @@ const ForceDirectedGraph = () => {
 			.forceSimulation()
 			.force(
 				"link",
-				d3.forceLink().id((d) => d.id)
+				d3.forceLink().id((d) => d.node)
 			)
 			.force("charge", d3.forceManyBody().strength(-50))
-			.force("center", d3.forceCenter(width / 2, height / 2));
+			.force("center", d3.forceCenter(width / 2, height / 2))
+			.force(
+				"collision",
+				d3.forceCollide((d) => d.degree + 10)
+			);
 
-		const links = [
-			{ source: "Node A", target: "Node B" },
-			{ source: "Node A", target: "Node C" },
-			{ source: "Node B", target: "Node C" },
+		const links = Object.values(backlinks).map((value) => ({
+			source: value.title,
+			target: title,
+		}));
+
+		const testNode = Object.values(backlinks).map((value) => ({
+			node: value.title,
+		}));
+
+		const nodes = [
+			{
+				node: title,
+			},
+			...testNode,
 		];
-
-		const nodes = [{ id: "Node A" }, { id: "Node B" }, { id: "Node C" }];
 
 		simulation.nodes(nodes).on("tick", () => {
 			link
@@ -46,6 +59,7 @@ const ForceDirectedGraph = () => {
 
 			node.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
 		});
+
 		simulation.force("link").links(links);
 
 		const dragStarted = (event: any, d: any) => {
@@ -91,8 +105,12 @@ const ForceDirectedGraph = () => {
 					.on("end", dragEnded)
 			);
 
-		console.log("link", link);
-		console.log("node", node);
+		node
+			.append("text")
+			.attr("x", 12)
+			.attr("dy", ".35em")
+			.attr("class", styles.text)
+			.text((d) => d.node);
 	};
 
 	useEffect(() => {

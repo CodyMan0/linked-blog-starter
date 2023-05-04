@@ -20,7 +20,6 @@ type Props = {
 };
 
 export default function Post({ post, backlinks }: Props) {
-	console.log("backlinks", backlinks);
 	const router = useRouter();
 	const description = post.excerpt.slice(0, 155);
 	if (!router.isFallback && !post?.slug) {
@@ -100,6 +99,7 @@ export async function getStaticProps({ params }: Params) {
 			})
 		)
 	);
+	console.log("backlinkNodes", backlinkNodes);
 
 	return {
 		props: {
