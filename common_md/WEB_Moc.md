@@ -2,25 +2,25 @@
 
 ## 기본 뼈대
 
-- [[HTML (LN)]]
-- [[CSS]]
-- [[JS_MOC]]
+* *HTML (LN)*
+* *CSS*
+* *JS_MOC*
 
 ## 역사
 
-- [[웹 서비스와 역사와 발전]]
-- [[Network MOC]]
+* *웹 서비스와 역사와 발전*
+* *Network MOC*
 
 ## 보안 문제
 
-[[WEB_security]]
+*WEB_security*
 
 ## Web Assembly
 
-1. [[Wastime]]
-2. [[Lunatic]]
-3.
+1. *Wastime*
+1. *Lunatic*
+1. 
 
 ### 연결문서
 
-1. [[Sass]]
+1. *Sass*

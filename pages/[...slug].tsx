@@ -81,6 +81,7 @@ export async function getStaticProps({ params }: Params) {
 		"content",
 		"ogImage",
 	]);
+
 	const content = await markdownToHtml(post.content || "", slug);
 	const linkMapping = await getLinksMapping();
 	console.log("linkMapping", linkMapping);
@@ -90,7 +91,6 @@ export async function getStaticProps({ params }: Params) {
 
 	console.log("slug", slug);
 	console.log("backlink", backlinks);
-
 	const backlinkNodes = Object.fromEntries(
 		await Promise.all(
 			backlinks.map(async (slug) => {
@@ -99,6 +99,7 @@ export async function getStaticProps({ params }: Params) {
 			})
 		)
 	);
+	console.log("backlinkNodes", backlinkNodes);
 
 	return {
 		props: {

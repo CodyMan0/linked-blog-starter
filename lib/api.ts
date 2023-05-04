@@ -69,7 +69,6 @@ export function getLinksMapping() {
 		getAllPosts(["slug", "content"]).map((i) => [i.slug, i.content])
 	);
 
-
 	const allSlugs = new Set(postsMapping.keys());
 	postsMapping.forEach((content, slug) => {
 		const mdLink = /\[[^\[\]]+\]\(([^\(\)]+)\)/g;
@@ -83,7 +82,7 @@ export function getLinksMapping() {
 		}
 		linksMapping[slug] = linkSlugs;
 	});
-	// console.log("link", linksMapping);
+	console.log("link", linksMapping);
 	return linksMapping;
 }
 
