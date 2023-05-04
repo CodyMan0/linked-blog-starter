@@ -23,7 +23,7 @@ const Header = () => {
 				!top && "bg-white backdrop-blur-sm shadow-lg"
 			}`}
 		>
-			<div className="max-w-6xl px-5 sm:px-6">
+			<div className="w-full px-5 sm:px-6">
 				<div className="flex items-center justify-between h-16 md:h-20">
 					<h2 className="shrink-0 mr-4 text-2xl font-bold tracking-tight md:tracking-tighter leading-tight">
 						<Link
@@ -39,7 +39,7 @@ const Header = () => {
 							<ul className="flex grow justify-end flex-wrap items-center">
 								<li>
 									<button
-										className="w-4 h-4 my-auto mx-2 border-black"
+										className="w-4 h-4 my-auto mx-2 border-black cursor-pointer"
 										aria-label="Search"
 										onClick={() => setSearching(!searching)}
 										disabled={searching}
@@ -54,7 +54,7 @@ const Header = () => {
 									</button>
 								</li>
 							</ul>
-							<p className="text-sm ">궁금하신 키워드를 검색해보세요</p>
+							<p className="text-sm font-bold ">👈 Click! Search</p>
 							<Search visible={searching} setVisible={setSearching} />
 						</>
 					)}

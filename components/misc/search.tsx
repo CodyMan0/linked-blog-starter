@@ -64,11 +64,14 @@ function Search({ visible, setVisible }) {
 
 	return (
 		<div
-			className={`absolute top-full h-screen pb-16 z-20 left-0 w-full overflow-y-auto overscroll-none overflow-x-hidden bg-white/95 ${
+			className={`absolute top-full w-full h-screen z-20 left-0  overflow-y-auto overscroll-none overflow-x-hidden bg-white/95 ${
 				visible ? "block" : "hidden"
 			}`}
 		>
-			<div ref={containerRef} className="max-w-4xl flex flex-wrap mt-5 px-5">
+			<div
+				ref={containerRef}
+				className="max-w-4xl flex items-center  flex-wrap mt-5 px-5 my-0 mx-auto"
+			>
 				{/* Search Bar */}
 				<div className="w-full">
 					<label className="block text-sm sr-only" htmlFor="search">
