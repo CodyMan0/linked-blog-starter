@@ -25,13 +25,16 @@ const ForceDirectedGraph = ({ backlinks, title }: Props) => {
 			.forceSimulation()
 			.force(
 				"link",
-				d3.forceLink().id((d) => d.node)
+				d3
+					.forceLink()
+					.id((d) => d.node)
+					.distance(50)
 			)
-			.force("charge", d3.forceManyBody().strength(-50))
+			.force("charge", d3.forceManyBody().strength(-500))
 			.force("center", d3.forceCenter(width / 2, height / 2))
 			.force(
 				"collision",
-				d3.forceCollide((d) => d.degree + 10)
+				d3.forceCollide((d) => d.degree + 30)
 			);
 
 		const links = Object.values(backlinks).map((value) => ({
@@ -49,18 +52,6 @@ const ForceDirectedGraph = ({ backlinks, title }: Props) => {
 			},
 			...testNode,
 		];
-
-		simulation.nodes(nodes).on("tick", () => {
-			link
-				.attr("x1", (d) => d.source.x)
-				.attr("y1", (d) => d.source.y)
-				.attr("x2", (d) => d.target.x)
-				.attr("y2", (d) => d.target.y);
-
-			node.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
-		});
-
-		simulation.force("link").links(links);
 
 		const dragStarted = (event: any, d: any) => {
 			if (!event.active) simulation.alphaTarget(0.3).restart();
@@ -92,11 +83,15 @@ const ForceDirectedGraph = ({ backlinks, title }: Props) => {
 			.select(graphRef.current)
 			.append("g")
 			.attr("class", styles.node)
-			.selectAll("circle")
+			.selectAll("g")
 			.data(nodes)
-			.enter()
-			.append("circle")
-			.attr("r", 10)
+			.join("g")
+			.on("mouseover", function () {
+				d3.select(this).style("fill", "red");
+			})
+			.on("mouseout", function () {
+				d3.select(this).style("fill", "black");
+			})
 			.call(
 				d3
 					.drag()
@@ -105,12 +100,27 @@ const ForceDirectedGraph = ({ backlinks, title }: Props) => {
 					.on("end", dragEnded)
 			);
 
+		node.append("circle").attr("class", styles.node).attr("r", 8);
 		node
 			.append("text")
-			.attr("x", 12)
-			.attr("dy", ".35em")
+			.attr("x", 8)
+			.attr("y", "0.31em")
+			.attr("stroke", "black")
 			.attr("class", styles.text)
+			.attr("stroke-opacity", 0.3)
 			.text((d) => d.node);
+
+		simulation.nodes(nodes).on("tick", () => {
+			link
+				.attr("x1", (d) => d.source.x)
+				.attr("y1", (d) => d.source.y)
+				.attr("x2", (d) => d.target.x)
+				.attr("y2", (d) => d.target.y);
+
+			node.attr("transform", (d) => `translate(${d.x},${d.y})`);
+		});
+
+		simulation.force("link").links(links);
 	};
 
 	useEffect(() => {

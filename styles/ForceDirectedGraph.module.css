@@ -14,7 +14,7 @@
 }
 
 .text {
-	color: black;
-	font: 10px sans-serif;
+	font: 9px sans-serif;
+	letter-spacing: 1px;
 	pointer-events: cursor;
 }
