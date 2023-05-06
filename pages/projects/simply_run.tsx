@@ -3,13 +3,13 @@ import Explain from "../../components/misc/Explain";
 import BasicContentLayout from "../../components/misc/layout/basicContentLayout";
 import { PROJECT_LIST } from "../../lib/constants";
 
-const result = PROJECT_LIST.find((item) => item.label === "GACHI");
-console.log(result);
-const Gachi = () => {
+const result = PROJECT_LIST.find((item) => item.label === "SIMPLY_RUN");
+
+const Simply_run = () => {
 	return (
 		<BasicContentLayout
-			title={result.label}
-			summary="community"
+			title=""
+			summary="RUNNING_PLATFORM"
 			introduction="프로젝트 요약란"
 			skillSet={result.stacks}
 		>
@@ -19,4 +19,4 @@ const Gachi = () => {
 	);
 };
 
-export default Gachi;
+export default Simply_run;

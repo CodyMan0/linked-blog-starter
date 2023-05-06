@@ -17,14 +17,14 @@ export const BLOCK_LIST = [
 	},
 	{
 		id: 3,
-		label: "RUNNERUP",
-		image: "",
+		label: "SIMPLY_RUN",
+		image: "simplyRun.png",
 		gridLayout: "1/3",
 	},
 	{
 		id: 4,
-		label: "GACHI",
-		image: "gachi.png",
+		label: "GATCHI",
+		image: "gatchi.png",
 		gridLayout: "1/3",
 	},
 	{
@@ -38,22 +38,22 @@ export const BLOCK_LIST = [
 export const PROJECT_LIST = [
 	{
 		id: 1,
-		label: "RUNNERUP",
-		image: "",
-		stacks: ["nextJs", "typescript", "storybook"],
+		label: "SIMPLY_RUN",
+		image: "simplyRun.png",
+		stacks: ["nextJs", "typescript", "storybook", "react-query"],
 		gridLayout: "1/2",
 	},
 	{
 		id: 2,
-		label: "GACHI",
-		image: "gachi.png",
+		label: "GATCHI",
+		image: "gatchi.png",
 		stacks: ["svelteKit", "typescript", "tailwind"],
 		gridLayout: "1/2",
 	},
 	{
 		id: 3,
 		label: "PODO",
-		image: "",
+		image: "Favicon.jpeg",
 		stacks: ["reactJs", "typescript", "express.js", "EC2"],
 		gridLayout: "1/2",
 	},
@@ -82,8 +82,8 @@ export const colorVariants = {
 export const convertLabelName = {
 	"About Me": "about",
 	KODA: "projects/koda",
-	RUNNERUP: "projects/runnerup",
-	GACHI: "projects/gachi",
+	SIMPLY_RUN: "projects/simply_run",
+	GATCHI: "projects/gatchi",
 	PODO: "projects/podo",
 	"Digital Garden": "knowledge_MOCs",
 };

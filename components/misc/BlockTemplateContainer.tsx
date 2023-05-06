@@ -17,6 +17,7 @@ const BlockTemplateContainer = () => {
 			} phone:auto-rows-[40vh] sm:auto-rows-[50vh] md:auto-rows-[50vh] lg:auto-rows-[35vh] overflow-hidden`}
 		>
 			{changedListAsLocation.map((block: BlockList | ProjectList) => {
+				console.log(changedListAsLocation);
 				return (
 					<BlockTemplate
 						key={block.id}
