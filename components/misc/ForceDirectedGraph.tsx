@@ -92,6 +92,9 @@ const ForceDirectedGraph = ({ backlinks, title }: Props) => {
 			.on("mouseout", function () {
 				d3.select(this).style("fill", "black");
 			})
+			.on("click", function (e) {
+				window.location.href = `/${e.target.__data__.node}`;
+			})
 			.call(
 				d3
 					.drag()
