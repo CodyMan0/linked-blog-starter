@@ -46,9 +46,14 @@ function PostSingle({ title, date, author, content, backlinks }: Props) {
 								{/* Sidebar */}
 								<aside className="relative lg:block lg:w-72 lg:ml-20 mt-10 lg:mt-0 shrink-0">
 									<div>
-										<h4 className="text-lg font-bold leading-snug tracking-tight mb-4">
-											graph view
-										</h4>
+										<div className="flex justify-between items-center">
+											<h4 className="text-lg font-bold leading-snug tracking-tight mb-4">
+												graph view
+											</h4>
+											<h5 className="text-sm  font-base leading-snug tracking-tight mb-4">
+												클릭시 이동!
+											</h5>
+										</div>
 										<div
 											id="graph"
 											className="w-full h-72 relative note-preview max-w-[400px] rounded shadow-sm bg-white cursor-pointer hover:border-transparent"
@@ -56,7 +61,7 @@ function PostSingle({ title, date, author, content, backlinks }: Props) {
 											<ForceDirectedGraph backlinks={backlinks} title={title} />
 										</div>
 									</div>
-									<div className="mt-10">
+									{/* <div className="mt-10">
 										<h4 className="text-lg font-bold leading-snug tracking-tight mb-4">
 											Backlinks
 										</h4>
@@ -65,7 +70,7 @@ function PostSingle({ title, date, author, content, backlinks }: Props) {
 												<Backlinks backlinks={backlinks} />
 											)}
 										</div>
-									</div>
+									</div> */}
 								</aside>
 							</div>
 
