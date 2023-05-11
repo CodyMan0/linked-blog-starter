@@ -9,16 +9,19 @@ type Props = {
 	title: string;
 	content: string;
 	date?: string;
+	slug: string;
 	author?: Author;
 	backlinks: {
 		[k: string]: {
 			title: string;
 			excerpt: string;
+			slug: string;
 		};
 	};
 };
 
-function PostSingle({ title, date, author, content, backlinks }: Props) {
+function PostSingle({ title, date, slug, author, content, backlinks }: Props) {
+	console.log(backlinks);
 	return (
 		<section>
 			<div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -54,11 +57,8 @@ function PostSingle({ title, date, author, content, backlinks }: Props) {
 												클릭시 이동!
 											</h5>
 										</div>
-										<div
-											id="graph"
-											className="w-full h-72 relative note-preview max-w-[400px] rounded shadow-sm bg-white cursor-pointer hover:border-transparent"
-										>
-											<ForceDirectedGraph backlinks={backlinks} title={title} />
+										<div className="w-full h-72 relative note-preview max-w-[400px] rounded shadow-sm bg-white cursor-pointer hover:border-transparent">
+											<ForceDirectedGraph backlinks={backlinks} slug={slug} />
 										</div>
 									</div>
 									{/* <div className="mt-10">
