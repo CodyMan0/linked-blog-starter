@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import PreviewLink from "./preview-link";
-import instaIcon from "/public/favicon/instagram.png";
+import instaIcon from "/public/favicon/favicon-32x32.png";
 
 const Footer = () => {
 	return (
@@ -17,10 +16,8 @@ const Footer = () => {
 					/>
 				</Link>
 			</div>
-			<p>
-				<Link href="/info">Made with</Link> 하트
-			</p>
-			<p>Terms of use | Privacy Policy | Disclaimer</p>
+			<Link className="hover:" href="/info">Made with ❤️. © 2023</Link>
+			<p className="text-[12px]">Terms of use | Privacy Policy | Disclaimer</p>
 		</footer>
 	);
 };

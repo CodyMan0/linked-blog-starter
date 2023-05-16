@@ -34,7 +34,9 @@ const SideBar = () => {
 						</Link>
 					</span>
 				</div>
+				<Footer/>
 			</div>
+			
 		</aside>
 	);
 };
