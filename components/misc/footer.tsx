@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import PreviewLink from "./preview-link";
-import instaIcon from "/public/favicon/instagram.png";
+import instaIcon from "/public/favicon/favicon-32x32.png";
+import StyledLink from "./StyledLink";
 
 const Footer = () => {
 	return (
-		<footer className="relative bottom-0 lg:fixed lg:left-0 lg:bottom-0 lg:w-96  w-full p-10 text-white bg-black">
+		<footer className="relative lg:fixed bottom-0 lg:left-0 lg:bottom-0 lg:w-96  w-full p-10 text-white bg-black">
 			<div className="flex flex-row gap-3">
 				<Link href="www">
 					<Image
@@ -17,10 +17,11 @@ const Footer = () => {
 					/>
 				</Link>
 			</div>
-			<p>
-				<Link href="/info">Made with</Link> 하트
-			</p>
-			<p>Terms of use | Privacy Policy | Disclaimer</p>
+			<StyledLink href="/info" location="footer">
+				Made with ❤️.
+			</StyledLink>{" "}
+			© 2023
+			<p className="text-[12px]">Terms of use | Privacy Policy | Disclaimer</p>
 		</footer>
 	);
 };

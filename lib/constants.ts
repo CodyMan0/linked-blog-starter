@@ -1,6 +1,17 @@
-export const CMS_NAME = "Markdown";
-export const HOME_OG_IMAGE_URL =
-	"https://og-image.vercel.app/Next.js%20Blog%20Starter%20Example.png?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg";
+export type IBlockList = {
+	id: number;
+	label: string;
+	image: string;
+	gridLayout: string;
+}[];
+
+export type PROJECT_LIST = {
+	id: number;
+	label: string;
+	image: string;
+	stacks: string[];
+	gridLayout: string;
+}[];
 
 export const BLOCK_LIST = [
 	{
@@ -86,4 +97,16 @@ export const convertLabelName = {
 	GATCHI: "projects/gatchi",
 	PODO: "projects/podo",
 	"Digital Garden": "knowledge_MOCs",
+};
+
+export const convertSummaryName = {
+	"/about": "About",
+	"/project": "Project",
+	"/[...slug]": "Blog",
+};
+
+export const getHrefFromLabel = {
+	About: "/about",
+	Projects: "/projects",
+	KnowledgeBase: "/knowledge_MOCs",
 };

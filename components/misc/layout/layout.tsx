@@ -3,6 +3,7 @@ import React from "react";
 import Header from "../header";
 import SideBar from "../sidebar";
 import Transition from "../Transition";
+import Footer from "../footer";
 
 type Props = {
 	children: React.ReactNode;
@@ -22,6 +23,7 @@ const Layout = ({ children }: Props) => {
 					{children}
 				</Transition>
 			</div>
+			<Footer />
 		</div>
 	);
 };
