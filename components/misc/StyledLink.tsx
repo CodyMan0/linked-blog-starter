@@ -1,5 +1,10 @@
 import Link from "next/link";
-import { IStyledLink } from "../../@types/project";
+
+type IStyledLink = {
+	href: string;
+	children: string;
+	location: string; // 링크를 사용할 위치 컴포넌트 넘겨주기 각기 다른 스타일링을 위한 코드
+};
 
 const StyledLink = ({ href, children, location }: IStyledLink) => {
 	const changeLinkStyle = {
