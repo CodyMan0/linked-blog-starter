@@ -20,7 +20,6 @@ const SideBar = () => {
 						Knowledge
 					</StyledLink>
 				</div>
-				<Footer />
 			</div>
 		</aside>
 	);

@@ -6,6 +6,7 @@ import Layout from "../components/misc/layout/layout";
 import Router from "next/router";
 import NProgress from "nprogress";
 import "nprogress/nprogress.css";
+import Footer from "../components/misc/footer";
 
 Router.events.on("routeChangeStart", () => NProgress.start());
 Router.events.on("routeChangeComplete", () => NProgress.done());

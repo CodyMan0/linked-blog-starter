@@ -5,7 +5,7 @@ import StyledLink from "./StyledLink";
 
 const Footer = () => {
 	return (
-		<footer className="relative bottom-0 lg:fixed lg:left-0 lg:bottom-0 lg:w-96  w-full p-10 text-white bg-black">
+		<footer className="relative lg:fixed bottom-0 lg:left-0 lg:bottom-0 lg:w-96  w-full p-10 text-white bg-black">
 			<div className="flex flex-row gap-3">
 				<Link href="www">
 					<Image
