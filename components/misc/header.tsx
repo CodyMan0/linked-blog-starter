@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import Search from "./search";
 import { useRouter } from "next/router";
+import { convertSummaryName } from "../../lib/constants";
 
 const Header = () => {
 	const router = useRouter();
@@ -31,10 +32,10 @@ const Header = () => {
 							className="block hover:underline"
 							aria-label="My Blog"
 						>
-							{convertName[pathName]}
+							{convertSummaryName[pathName]}
 						</Link>
 					</h2>
-					{convertName[pathName] === "Blog" && (
+					{convertSummaryName[pathName] === "Blog" && (
 						<>
 							<ul className="flex grow justify-end flex-wrap items-center">
 								<li>
@@ -65,9 +66,3 @@ const Header = () => {
 };
 
 export default Header;
-
-export const convertName = {
-	"/about": "About",
-	"/project": "Project",
-	"/[...slug]": "Blog",
-};

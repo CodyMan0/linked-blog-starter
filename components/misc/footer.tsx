@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import instaIcon from "/public/favicon/favicon-32x32.png";
+import StyledLink from "./StyledLink";
 
 const Footer = () => {
 	return (
@@ -16,7 +17,10 @@ const Footer = () => {
 					/>
 				</Link>
 			</div>
-			<Link className="hover:" href="/info">Made with ❤️. © 2023</Link>
+			<StyledLink href="/info" location="footer">
+				Made with ❤️.
+			</StyledLink>{" "}
+			© 2023
 			<p className="text-[12px]">Terms of use | Privacy Policy | Disclaimer</p>
 		</footer>
 	);

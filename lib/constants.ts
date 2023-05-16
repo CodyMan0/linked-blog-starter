@@ -1,19 +1,17 @@
-
 export type IBlockList = {
 	id: number;
 	label: string;
 	image: string;
 	gridLayout: string;
-}[]
+}[];
 
 export type PROJECT_LIST = {
-id: number;
-label: string;
-image: string;
-stacks: string[];
-gridLayout: string;
-}[]
-
+	id: number;
+	label: string;
+	image: string;
+	stacks: string[];
+	gridLayout: string;
+}[];
 
 export const BLOCK_LIST = [
 	{
@@ -99,4 +97,16 @@ export const convertLabelName = {
 	GATCHI: "projects/gatchi",
 	PODO: "projects/podo",
 	"Digital Garden": "knowledge_MOCs",
+};
+
+export const convertSummaryName = {
+	"/about": "About",
+	"/project": "Project",
+	"/[...slug]": "Blog",
+};
+
+export const getHrefFromLabel = {
+	About: "/about",
+	Projects: "/projects",
+	KnowledgeBase: "/knowledge_MOCs",
 };
