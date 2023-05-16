@@ -49,15 +49,12 @@ function PostSingle({ title, date, slug, author, content, backlinks }: Props) {
 								{/* Sidebar */}
 								<aside className="relative lg:block lg:w-72 lg:ml-20 mt-10 lg:mt-0 shrink-0">
 									<div>
-										<div className="flex justify-between items-center">
-											<h4 className="text-lg font-bold leading-snug tracking-tight mb-4">
+										<div className="flex">
+											<h4 className="text-2xl lg:text-xl font-bold leading-snug tracking-tight mb-4 mx-auto">
 												graph view
 											</h4>
-											<h5 className="text-sm  font-base leading-snug tracking-tight mb-4">
-												클릭시 이동!
-											</h5>
 										</div>
-										<div className="w-full h-72 relative note-preview max-w-[400px] rounded shadow-sm bg-white cursor-pointer hover:border-transparent">
+										<div className="w-full h-72 relative note-preview rounded shadow-sm bg-white cursor-pointer hover:border-transparent">
 											<ForceDirectedGraph backlinks={backlinks} slug={slug} />
 										</div>
 									</div>
