@@ -1,15 +1,16 @@
 import { DefaultSeoProps } from "next-seo";
 
-const description = "made this website with NextJS";
+const description =
+	"안녕하세요. 프론트 개발에 주력하고 있는 이주영입니다. 저에 대한 간단한 소개와 프로젝트 그리고 제 지식 노트를 확인하실 수 있습니다.";
 // See https://www.npmjs.com/package/next-seo for more options
 const config: DefaultSeoProps = {
-	titleTemplate: "%s | Brian",
+	titleTemplate: "%s | 주영",
 	defaultTitle: "Big-Dreamer, Problem-solver",
 	description,
 
 	openGraph: {
 		type: "website",
-		locale: "en_IE",
+		locale: "ko_KR",
 		title: "Big-Dreamer, Problem-solver",
 		description,
 	},
