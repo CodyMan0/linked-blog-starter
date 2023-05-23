@@ -92,10 +92,10 @@ export default function About() {
 							</h3>
 
 							<p>
-								취업을 준비하면서 실력을 쌓는 기간으로 하루하루 몰입감있게
-								보내고 있습니다. 기본적인 알고리즘과 기획을 동반하여 실제
-								일상에서 불편한 점을 찾아 해결하는 프로젝트를 기획하고 진행하고
-								있습니다.
+								취업을 준비하면서 비옥한 토양을 만들기 위해 매일 개인 웹페이지에
+								지식을 정리하고 있습니다. 기본적인 알고리즘 및 네트워크 기본을
+								공부하고 있으며 꾸준히 실제 일상에서 불편한 점을 찾아 해결하는
+								프로젝트를 기획하고 진행하고 있습니다.
 							</p>
 						</VerticalTimelineElement>
 						<VerticalTimelineElement
@@ -176,7 +176,7 @@ export default function About() {
 									"0 10px 25px 20px rgb(0 0 0 / 0.05), 0 8px 10px -6px rgb(0 0 0 / 0.1)",
 								borderRadius: "10px",
 							}}
-							date="2022.09 ~ 2022.10"
+							date="2022.07 ~ 2022.10"
 							icon={
 								<img
 									style={{
