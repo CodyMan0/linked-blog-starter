@@ -5,6 +5,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { widthVariants } from "../../lib/constants";
+import Link from "next/link";
 
 export default function About() {
 	return (
@@ -16,20 +17,48 @@ export default function About() {
 					type: "website",
 				}}
 			/>
-			<div className="w-full p-16 max-w-screen-xl mx-auto my-0">
+			<div className="w-full p-2 lg:p-16 max-w-screen-xl mx-auto my-0">
 				<span className="tracking-wider text-lg uppercase">
 					<strong>FRONTEND</strong> SOFTWARE ENGINEER
 				</span>
 				<h1 className="text-4xl font-extrabold my-7">
-					안녕하세요 이주영이에요.
+					안녕하세요 이주영입니다.
 				</h1>
-				<p>
-					- 모든 사람들의 일상에 필요한 서비스를 만드는 개발자가 되려고 합니다.
-				</p>
-				<p>
-					- 문제를 해결하는데 희열을 느끼고 혼자보다 팀으로 움직이는 것을
-					잘합니다.
-				</p>
+				<article className="">
+					<p className="about-p">
+						안녕하세요 🥰 찾아와 주셔서 감사합니다.
+						<br /> 프론트엔드 개발자,이주영입니다.
+					</p>
+					<p className="about-p ">
+						2022년 여름, 교양 수업을 통해 프로그래밍의 무궁무진한 가능성을
+						체감했습니다. <br />
+						가만히 있을 수 없었고 좋아했던 영어를 도구 삼아 학습할 수 있는 무료
+						오픈소스 (the odin project)를 통해 개발에 입문 하게 되었습니다.
+					</p>
+					<p className="about-p">
+						<strong>React</strong>와 <strong>Typescript</strong>를 주로 사용하고
+						있으며 현재는 Web Service를 즐겁게 개발하고 있습니다.
+					</p>
+					<p className="about-p">
+						색다르게 정리하는 것을 좋아합니다. Obsidian 메모 어플리케이션을
+						활용하여 정리한 내용이 자동적으로{" "}
+						<Link
+							href="/knowledge_MOCs"
+							className="underline underline-offset-4 text-link"
+						>
+							개인 웹페이지
+						</Link>
+						에 베포되도록 설정했으며, <br />
+						사소할 수 있으나 다양하게 오픈소스 활동에 기여하고 있습니다.
+					</p>
+					<p className="about-p">
+						<strong>
+							궁극적으로 모두에게 도움이 되고 사회에 이롭게 기여할 수 있는
+							개발자가 되는 것이 목표입니다.
+						</strong>
+					</p>
+				</article>
+
 				<section>
 					<h2 className="text-2xl font-bold my-7">My Dev Journey</h2>
 					<VerticalTimeline>
