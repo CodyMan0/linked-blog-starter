@@ -23,7 +23,7 @@ const BasicContentLayout = ({
 		<div className="w-full p-16 max-w-screen-xl mx-auto my-0">
 			<span className="tracking-wider text-lg uppercase">{summary}</span>
 			<h1 className="text-4xl font-extrabold my-7">{title}</h1>
-			{skillSet?.length > 0 && (
+			{!!skillSet && (
 				<div className="mb-4">
 					기술 키워드:
 					<Tag content={skillSet[0]} />
@@ -31,14 +31,10 @@ const BasicContentLayout = ({
 					<Tag content={skillSet[2]} />
 				</div>
 			)}
-			{path !== "/about" && (
-				<div className="mb-4">
-					작업 키워드:
-					<span className="leading-relaxed text-sm pb-7 tracking-wider mx-1">
-						정리해보기
-					</span>
-				</div>
-			)}
+			<div className="mb-4">
+				작업 키워드: 정리해보기
+				<span className="leading-relaxed text-sm pb-7 tracking-wider mx-1"></span>
+			</div>
 			{children}
 		</div>
 	);

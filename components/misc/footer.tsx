@@ -17,9 +17,9 @@ const Footer = () => {
 					/>
 				</Link>
 			</div>
-			<StyledLink href="/info" location="footer">
+			<StyledLink href="/info" location="">
 				Made with ❤️.
-			</StyledLink>{" "}
+			</StyledLink>
 			© 2023
 			<p className="text-[12px]">Terms of use | Privacy Policy | Disclaimer</p>
 		</footer>
