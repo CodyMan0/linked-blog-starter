@@ -5,13 +5,13 @@ const description =
 // See https://www.npmjs.com/package/next-seo for more options
 const config: DefaultSeoProps = {
 	titleTemplate: "%s | 주영",
-	defaultTitle: "Big-Dreamer, Problem-solver",
+	defaultTitle: "주영::DevHub",
 	description,
 
 	openGraph: {
 		type: "website",
 		locale: "ko_KR",
-		title: "Big-Dreamer, Problem-solver",
+		title: "프론트엔드 이주영",
 		description,
 	},
 	additionalLinkTags: [
