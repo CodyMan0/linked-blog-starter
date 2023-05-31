@@ -1,0 +1,57 @@
+{
+	"title": "My Dev Journey",
+	"list": [
+		{
+			"subTitle": {
+				"text": "취업 준비"
+			},
+			"startDate": "2023-01",
+			"endDate": "현재 진행중",
+			"description": "취업을 준비하면서 비옥한 토양을 만들기 위해 매일 개인 웹페이지에 지식을 정리하고 있습니다. 기본적인 알고리즘 및 네트워크 기본을 공부하고 있으며 꾸준히 실제 일상에서 불편한 점을 찾아 해결하는 프로젝트를 기획하고 진행하고 있습니다.",
+			"imageSrc": "/assets/submit.jpeg",
+			"alt": "pre_on_boarding_image"
+		},
+		{
+			"subTitle": {
+				"text": "원티드 프리온보딩 코스"
+			},
+			"startDate": "2022-11",
+			"endDate": "2022-12",
+			"description": "원티드에서 주관하는 프론트엔드 코스로써 여러 IT기업의 실무 과제로 이루어졌으며 실무자/취준생 등 여러 팀원들과 같이 다양한 프로젝트를 진행하였습니다.",
+			"imageSrc": "/assets/pre.png",
+			"alt": "pre_on_boarding_image"
+		},
+		{
+			"subTitle": {
+				"text": "코오롱 글로벌 인턴십"
+			},
+			"position": "Student",
+			"startDate": "2022-09",
+			"endDate": "2022-10",
+			"description": "부트캠프 기업 협업 인턴쉽으로 코오롱 글로벌 DT전략 기획팀에서 설문조사 웹 어플리케이션 프로젝트를 진행하면서 실무 로직 및 가이드를 경험하였습니다",
+			"imageSrc": "/assets/kolon.png",
+			"alt": "kolon_global_image"
+		},
+		{
+			"subTitle": {
+				"text": "위코드 부트캠프"
+			},
+			"startDate": "2022-07",
+			"endDate": "2022-10",
+			"description": "프론트엔드 개발자로 나아가고 다양한 프로젝트를 경험하기 위해 위코드 부트캠프를 수료하였습니다. 웹에 대한 폭넓은 학습 및 알고리즘을 학습했으며, 동료 개발자와 다양한 프로젝트를 진행하면서 많은 경험을 쌓았습니다.",
+			"imageSrc": "/assets/we.png",
+			"alt": "wecode_logo"
+		},
+		{
+			"subTitle": {
+				"text": "오딘 (해외 웹 개발 무료 오픈소스)"
+			},
+			"position": "Student",
+			"startDate": "2022-04",
+			"endDate": "2022-06",
+			"description": "4학년 1학기에 수강한 프로그래밍 교양 수업을 통해 처음으로 python을 학습했습니다. 지금까지 너무나 당연하게 사용하고 있었던 Internet이 궁금해졌고 WEB에 대한 궁금증으로 해외 무료 오픈소스인 오딘을 통해 3개월간 학습을 진행했습니다",
+			"imageSrc": "/assets/odin.png",
+			"alt": "odin_image"
+		}
+	]
+}
