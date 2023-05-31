@@ -1,5 +1,4 @@
 import { jsonData as about, IOtherAbout } from "../../content/about";
-
 import { NextSeo } from "next-seo";
 
 import "react-vertical-timeline-component/style.min.css";

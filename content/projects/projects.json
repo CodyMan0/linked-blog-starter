@@ -1,0 +1,35 @@
+{
+	"title": "My Portfolio",
+	"list": [
+		{
+			"subTitle": {
+				"text": "알리자 프로젝트"
+			},
+			"startDate": "2023-05",
+			"endDate": "현재 진행중",
+			"description": "작성하고 있습니다.",
+			"imageSrc": "/assets/submit.jpeg",
+			"alt": "pre_on_boarding_image"
+		},
+		{
+			"subTitle": {
+				"text": "소셜 미디어 클론 프로젝트"
+			},
+			"startDate": "2023-01",
+			"endDate": "2023-02",
+			"description": "작성하고 있습니다.",
+			"imageSrc": "/assets/submit.jpeg",
+			"alt": "pre_on_boarding_image"
+		},
+		{
+			"subTitle": {
+				"text": "코오롱 내부 설문조사 프로젝트"
+			},
+			"startDate": "2022-09",
+			"endDate": "2022-10",
+			"description": "작성하고 있습니다.",
+			"imageSrc": "/assets/submit.jpeg",
+			"alt": "pre_on_boarding_image"
+		}
+	]
+}

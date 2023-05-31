@@ -1,9 +1,18 @@
 import { NextSeo } from "next-seo";
-import BlockTemplateContainer from "../../components/misc/BlockTemplateContainer";
+import Timeline from "../../components/element/Timeline";
+import "react-vertical-timeline-component/style.min.css";
+import { jsonData as projects, IOtherProjects } from "../../content/projects";
+import { jsonData as about, IOtherAbout } from "../../content/about";
+import ContainerLayout from "../../components/misc/layout/containerLayout";
 
-export default function Projects() {
+interface Props {
+	projectList: IOtherProjects;
+}
+
+export default function Projects({ projectList }: Props) {
+	console.log("pL", projectList);
 	return (
-		<>
+		<ContainerLayout>
 			<NextSeo
 				title="Projects"
 				// openGraph={{
@@ -22,7 +31,16 @@ export default function Projects() {
 				// 	],
 				// }}
 			/>
-			<BlockTemplateContainer />
-		</>
+
+			<Timeline {...projectList} />
+		</ContainerLayout>
 	);
+}
+
+export async function getStaticProps() {
+	return {
+		props: {
+			projectList: projects,
+		},
+	};
 }
