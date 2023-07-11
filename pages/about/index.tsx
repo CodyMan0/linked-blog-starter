@@ -29,7 +29,7 @@ export default function About({ aboutInfo }: Props) {
 					안녕하세요 이주영입니다.
 				</h1>
 
-				<article className="">
+				<article className="mb-20">
 					<h2 className="text-2xl font-bold my-5">Introduction</h2>
 					<p className="about-p">
 						안녕하세요 🥰 찾아와 주셔서 감사합니다. 프론트엔드 개발자{" "}
@@ -51,6 +51,8 @@ export default function About({ aboutInfo }: Props) {
 					<p className="about-p">
 						빠르게 성장하고 있을 뿐 아니라 지식을 체계적으로 정리하고 있습니다.
 						문제 해결에 필요한 개념들을 빠르게 찾아 익히는 데 집중하고 있습니다.
+					</p>
+					<p>
 						Obsidian 메모 어플리케이션을 활용하여 정리한 내용이 자동으로{" "}
 						<Link
 							href="/knowledge_MOCs"
@@ -60,27 +62,9 @@ export default function About({ aboutInfo }: Props) {
 						</Link>
 						에 베포되도록 설정했습니다.
 					</p>
-					<p className="about-p">
-						<h2 className="text-2xl font-bold my-5">Career Goal</h2>
-						<strong>
-							전세계에서 우리가 발굴한 문제 해결에 공감하여 모두가 필요로 하는
-							서비스 개발하기.
-						</strong>
-						<h3 className="text-xl font-medium my-5">Plan</h3>
-						<ul>
-							<li>
-								1. 대한 민국 안에서 실제 가치를 만들어내는 서비스 개발하기
-							</li>
-							<li>
-								2. 아직 신입 프론트엔드 개발자이지만 팔로워가 있는 개발자가
-								되는게 목표입니다. 결과적으로 어디서든 가치를 만들고 영향력을
-								끼치는 개발자로 성장하기
-							</li>
-						</ul>
-					</p>
 				</article>
 
-				<Timeline {...aboutInfo} />
+				<Timeline {...aboutInfo} type="about" />
 			</div>
 		</>
 	);

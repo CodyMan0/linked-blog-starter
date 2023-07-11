@@ -10,7 +10,6 @@ interface Props {
 }
 
 export default function Projects({ projectList }: Props) {
-	console.log("pL", projectList);
 	return (
 		<ContainerLayout>
 			<NextSeo
@@ -32,7 +31,7 @@ export default function Projects({ projectList }: Props) {
 				// }}
 			/>
 
-			<Timeline {...projectList} />
+			<Timeline {...projectList} type="project" />
 		</ContainerLayout>
 	);
 }

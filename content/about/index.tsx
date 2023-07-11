@@ -1,9 +1,10 @@
 import jsonData from "./about.json";
 
 export interface IAbout {
-	subTitle: {
+	Title: {
 		text: string;
 	};
+	gitRepo?: string;
 	startDate: string;
 	endDate: string;
 	description: string;
@@ -14,6 +15,7 @@ export interface IAbout {
 export interface IOtherAbout {
 	title: string;
 	list: IAbout[];
+	type: string;
 }
 
 export { jsonData };

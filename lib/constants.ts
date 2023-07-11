@@ -16,8 +16,8 @@ export type PROJECT_LIST = {
 export const BLOCK_LIST = [
 	{
 		id: 1,
-		label: "KODA",
-		image: "survey.png",
+		label: "AligOligo",
+		image: "oliLogo.png",
 		gridLayout: "1/3",
 	},
 	{
@@ -26,20 +26,15 @@ export const BLOCK_LIST = [
 		image: "aboutMe.jpg",
 		gridLayout: "2/3",
 	},
+
 	{
 		id: 3,
-		label: "SIMPLY_RUN",
-		image: "simplyRun.png",
+		label: "KODA",
+		image: "survey.png",
 		gridLayout: "1/3",
 	},
 	{
 		id: 4,
-		label: "GATCHI",
-		image: "gatchi.png",
-		gridLayout: "1/3",
-	},
-	{
-		id: 5,
 		image: "obsidian.png",
 		label: "Digital Garden",
 		gridLayout: "1/3",

@@ -2,17 +2,17 @@
 	"title": "Biography",
 	"list": [
 		{
-			"subTitle": {
+			"Title": {
 				"text": "취업 준비"
 			},
 			"startDate": "2023-01",
 			"endDate": "현재 진행중",
-			"description": "취업을 준비하면서 비옥한 토양을 만들기 위해 매일 개인 웹페이지에 지식을 정리하고 있습니다. 기본적인 알고리즘 및 네트워크 기본을 공부하고 있으며 꾸준히 실제 일상에서 불편한 점을 찾아 해결하는 프로젝트를 기획하고 진행하고 있습니다.",
+			"description": "깊이 있는 개발자로 성장하기 위해 배운 지식을 1차로 정리하고 개인 웹페이지를 통해 공유하고 있습니다. 이전 프로젝트를 진행하면서 기본적인 네트워크 지식과 알고리즘의 필요성을 깨달아 공부하고 있습니다. ",
 			"imageSrc": "/assets/submit.jpeg",
 			"alt": "pre_on_boarding_image"
 		},
 		{
-			"subTitle": {
+			"Title": {
 				"text": "원티드 프리온보딩 코스"
 			},
 			"startDate": "2022-11",
@@ -22,7 +22,7 @@
 			"alt": "pre_on_boarding_image"
 		},
 		{
-			"subTitle": {
+			"Title": {
 				"text": "코오롱 글로벌 인턴십"
 			},
 			"position": "Student",
@@ -33,7 +33,7 @@
 			"alt": "kolon_global_image"
 		},
 		{
-			"subTitle": {
+			"Title": {
 				"text": "위코드 부트캠프"
 			},
 			"startDate": "2022-07",
@@ -43,7 +43,7 @@
 			"alt": "wecode_logo"
 		},
 		{
-			"subTitle": {
+			"Title": {
 				"text": "오딘 (해외 웹 개발 무료 오픈소스)"
 			},
 			"position": "Student",

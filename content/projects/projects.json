@@ -2,43 +2,37 @@
 	"title": "My Portfolio",
 	"list": [
 		{
-			"subTitle": {
-				"text": "알리고 올리고 프로젝트"
+			"Title": {
+				"text": "Aligo Oligo 목표 달성 웹서비스"
 			},
-			"startDate": "2023-05",
+			"gitRepo": "https://github.com/aligo-ligo/aligo-oligo-frontend-latest",
+			"startDate": "2023-05-21",
 			"endDate": "현재 진행중",
-			"description": "빠르게 업데이트하겠습니다.",
-			"imageSrc": "/assets/submit.jpeg",
-			"alt": "pre_on_boarding_image"
+			"description": "취준생들을 위한 목표 달성 웹서비스를 기획하고 개발하였습니다. 목표를 이루기 위한 세분화된 계획 및 루틴을 설정하고 지인들에게 공유하여 공유받은 이들로 부터 응원 및 성공 여부 투표를 활용하여 목표 달성을 도와주는 서비스입니다.",
+			"imageSrc": "/assets/oliBody.png",
+			"alt": "알리고 올리고 올리 사진"
 		},
 		{
-			"subTitle": {
+			"Title": {
 				"text": "개인 지식 창고 웹페이지 프로젝트"
 			},
+			"gitRepo": "https://github.com/aligo-ligo/aligo-oligo-frontend-latest",
 			"startDate": "2023-01",
 			"endDate": "현재 진행중",
-			"description": "빠르게 업데이트하겠습니다.",
+			"description": "제 포트폴리오 SSG인 Jeykyll 프레임워크에서 Next.js로 마이그레이션 하였습니다. 제 옵시디언 메모 어플리케이션에 있는 약 1000개의 메모들을 Knowledge에서 공유하고 있습니다. 저에 대한 소개와 지금까지 진행했던 프로젝트들을 한눈에 볼 수 있도록 구현했습니다.",
 			"imageSrc": "/assets/submit.jpeg",
 			"alt": "pre_on_boarding_image"
 		},
+
 		{
-			"subTitle": {
-				"text": "소셜 미디어 클론 프로젝트"
+			"Title": {
+				"text": "KODA 설문조사 웹 어플리케이션 프로젝트"
 			},
-			"startDate": "2023-01",
-			"endDate": "2023-02",
-			"description": "빠르게 업데이트하겠습니다.",
-			"imageSrc": "/assets/submit.jpeg",
-			"alt": "pre_on_boarding_image"
-		},
-		{
-			"subTitle": {
-				"text": "코오롱 내부 설문조사 프로젝트"
-			},
+			"gitRepo": "https://github.com/aligo-ligo/aligo-oligo-frontend-latest",
 			"startDate": "2022-09",
 			"endDate": "2022-10",
-			"description": "빠르게 업데이트하겠습니다.",
-			"imageSrc": "/assets/submit.jpeg",
+			"description": "실제 개발자들의 협업을 경험하기 위해 진행했던 단기 인턴십입니다. 코오롱 글로벌 DT 전략 기획팀에서 설문조사 웹 어플리케이션 프로젝트를 진행하였습니다. 매일 진행되는 스탠드업 미팅과 멘토링을 통해 실무에서 사용하고 있는 개발론을 익히며 내부에서 사용할 설문조사 프로젝트를 진행하였습니다.",
+			"imageSrc": "/assets/koda.png",
 			"alt": "pre_on_boarding_image"
 		}
 	]

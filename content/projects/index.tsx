@@ -1,9 +1,10 @@
 import jsonData from "./projects.json";
 
 export interface IProjects {
-	subTitle: {
+	Title: {
 		text: string;
 	};
+	getRepo: string;
 	startDate: string;
 	endDate: string;
 	description: string;
@@ -14,6 +15,7 @@ export interface IProjects {
 export interface IOtherProjects {
 	title: string;
 	list: IProjects[];
+	type: string;
 }
 
 export { jsonData };

@@ -28,7 +28,7 @@ const BlockTemplate = ({ gridLayout, image, label, stacks }: Props) => {
 					{image && (
 						<Image
 							priority
-							src={`/assets/blog/authors/${image}`}
+							src={`/assets/${image}`}
 							alt="project_image"
 							fill
 							sizes="(max-width: 768px) 100vw,
